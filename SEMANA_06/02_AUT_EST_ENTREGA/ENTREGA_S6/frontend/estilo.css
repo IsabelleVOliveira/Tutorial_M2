@@ -5,6 +5,10 @@
 		padding:0;
 		box-sizing: border-box;
 	}
+	body {
+		width: 90vw;
+		margin: auto;
+	}
 	/*imagens flexiveis*/
 	img {   
   		max-width: 100%;   
@@ -60,7 +64,9 @@
 	  }
 	
 	  .zoom:hover {
-		transform: scale(1.5); /* Aumenta o tamanho em 1.5 vezes */
+		color: #F0F;
+		cursor: move, auto;
+		transform: scale(1.1); /* Aumenta o tamanho em 1.1 vezes */
 	  }
 /*seletores para desktops*/
 @media screen and (max-width: 1128px) {
@@ -74,11 +80,13 @@
 	}
 
 	.zoom {
-		transition: transform .2s; /* Adiciona uma transição suave */
+		transition: all .2s; /* Adiciona uma transição suave */
 	  }
 	
 	  .zoom:hover {
-		transform: scale(1.5); /* Aumenta o tamanho em 1.5 vezes */
+		color: #F0F;
+		cursor: move, auto;
+		transform: scale(1.1); /* Aumenta o tamanho em 1.1 vezes */
 	  }
 }
 
@@ -98,7 +106,9 @@
 	  }
 	
 	  .zoom:hover {
-		transform: scale(1.5); /* Aumenta o tamanho em 1.5 vezes */
+		color: #F0F;
+		cursor: move, auto;
+		transform: scale(1.1); /* Aumenta o tamanho em 1.1 vezes */
 	  }
 }
 

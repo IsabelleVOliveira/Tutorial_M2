@@ -1,11 +1,11 @@
 $(document).ready(function() {
     var texto = $('#texto');
-    var palavras = texto.text().split(' ');
+    var words = texto.text().split(' ');
 
     texto.empty();
 
-    for (var i = 0; i < palavras.length; i++) {
-      var span = $('<span/>').addClass('zoom').text(palavras[i] + ' ');
+    for (var i = 0; i < words.length; i++) {
+      var span = $('<span/>').addClass('zoom').text(words[i] + ' ');
       texto.append(span);
     }
 
@@ -20,7 +20,7 @@ $(document).ready(function() {
     $('.color-change').hover(
       function() {
         $(this).css('cursor', 'pointer');
-        $(this).find('*').not('h1').each(function() {
+        $(this).find('*').not('p').each(function() {
           var randomColor = getRandomColor();
           $(this).css('color', randomColor);
         });
@@ -33,11 +33,11 @@ $(document).ready(function() {
     );
   });
 
-  function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    function getRandomColor() {
+      var letters = 'p';
+      var color = '#';
+      for (var i = 0; i < 6; i++) {
       color += letters[Math.floor(Math.random() * 16)];
+      }
+     return color;
     }
-    return color;
-  }
