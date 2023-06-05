@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pagina de Insersão de COLETOR</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function trocaCor(){
+            var eTabela = document.getElementById("tabela01");
+            eTabela.style.backgroundColor = "blue";
+        }
+        function novaLinha(){
+            var eTabela = document.getElementById("tabela01");
+            var novaLinha = document.createElement('tr');
+            novaLinha.innerHTML = "<td>Coluna</td> <td> Coluna 2</td> <td> Coluna 3</td>"
+            eTabela.appendChild(novaLinha);
+        }
+    </script>
+</head>
+<head>
+<body>
+    <table id="tabela01" border="10">
+        <tr>
+            <td>Coluna</td>
+            <td> Coluna 2</td>
+            <td> Coluna 3</td>
+        </tr>
+        <tr>
+            <td>Coluna</td> 
+            <td> Coluna 2</td> 
+            <td> Coluna 3</td>
+        </tr>
+        <tr>
+            <td>Coluna</td> 
+            <td> Coluna 2</td> 
+            <td> Coluna 3</td>
+        </tr>
+    </table>
+    <button onclick="trocaCor()"> troca cor </button>
+    <button onclick="novaLinha()"> nova linha </button>
+</body>
+</html>
